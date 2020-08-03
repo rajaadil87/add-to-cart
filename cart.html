@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="x-UA-compatible" content="ie-edge"> -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.min.css">
+
+    <title>Shopping cart</title>
+    <link rel = "stylesheet" href="styles.css">
+</head>
+
+<!-- <script>
+    function displayCart(){
+  let cartItems = localStorage.getItem('productsInCart')
+  cartItems = JSON.parse(cartItems);
+
+    let productContainer=document.querySelector
+    (".products-container");
+  if(cartItems && productContainer){
+   
+    
+    productContainer.innerHTML ='';
+
+    Object.values(cartItems) .map (item =>{
+    productContainer.innerHTML += `
+    <div class=products>
+    <ion-icon name = "close-circle"></ion-icon>
+    <img src = ./images/$(item.tag).jpg">
+    <span>$(item.name)</span>
+    </div>
+    `
+    });
+        
+        
+  }
+}
+displayCart();
+</script> -->
+
+
+<body>
+    <header>
+   <div class="overlay"></div>
+<nav>
+    <h2>SHOP</h2>
+        <ul>
+        <li> <a href ="index.html"> home</a></li>
+        <li> <a href ="#"> About</a></li>
+        <li class="cart">
+            <a href ="cart.html">
+                <ion-icon name="basket"></ion-icon>cart<span>0</span>
+            </a>
+
+        </li>
+    </ul>
+</nav>
+</header>
+
+<div class="products-container">
+    <div class="product-header">
+        <h5 class="product-title"> PRODUCT </h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+    </div>
+
+    <div class="products">
+
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
